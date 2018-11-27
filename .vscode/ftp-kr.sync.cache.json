@@ -1,0 +1,45 @@
+{
+  "ftp://caganu.com@betatemplate@caganu.com": {
+    "cache-polyfill.js": {
+      "type": "-",
+      "size": 1763,
+      "lmtime": 0,
+      "modified": false
+    },
+    ".htaccess": {
+      "type": "-",
+      "size": 747,
+      "lmtime": 0,
+      "modified": true
+    },
+    "index.php": {
+      "type": "-",
+      "size": 1197,
+      "lmtime": 0,
+      "modified": true
+    },
+    "manifest.json": {
+      "type": "-",
+      "size": 561,
+      "lmtime": 0,
+      "modified": false
+    },
+    "mobile": {},
+    "prepros-6.config": {
+      "type": "-",
+      "size": 7588,
+      "lmtime": 0,
+      "modified": true
+    },
+    "public": {},
+    "serviceWorker.js": {
+      "type": "-",
+      "size": 2347,
+      "lmtime": 0,
+      "modified": false
+    },
+    "site": {},
+    "system": {}
+  },
+  "$version": 1
+}

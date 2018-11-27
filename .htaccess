@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+	Options All -Indexes
+    Options +FollowSymLinks
+    RewriteEngine On
+    #  Add trailing slash to urls
+	RewriteCond %{REQUEST_URI} !(/|\.) 
+	RewriteRule ^(.*)$ %{REQUEST_URI}/ [R=301,L]
+
+    #Now, rewrite to HTTPS:
+	RewriteCond %{HTTPS} off
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+	RewriteCond %{REQUEST_URI} !.*\.(ico|gif|jpg|jpeg|png|js|css|woff2|woff|ttf|svg|eot|csv)
+	RewriteRule ^([^?]*) index.php?_route_=$1 [L,QSA]
+
+	#error
+	#ErrorDocument error/errir_401.html
+	#ErrorDocument error/errir_403.html
+	#ErrorDocument error/errir_404.html
+	#ErrorDocument error/errir_400.html
+	<Files .htaccess|config\.php|database\.php|start-up\.php>
+		Order Allow,Deny
+		Deny from all
+	</Files>
+</IfModule>

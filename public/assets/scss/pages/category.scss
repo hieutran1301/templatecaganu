@@ -1,0 +1,195 @@
+.category-block{
+    .category{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-left{
+        flex: 0 0 20%;
+        max-width: 20%;
+        padding-right: 3px;
+    }
+    .box-right{
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding-left: 0;
+        .banner-block{
+            display: block;
+            .banner-static{
+                .banner-brand-block{
+                    .banner-brand-item{
+                        margin-bottom: 15px;
+                        a{
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .option-block{
+            margin-left: 15px;
+            margin-right: 15px;
+            border-bottom: 1px solid $line-border;
+            .list-option{
+                vertical-align: middle;
+                .list-title{
+                    color: $black-color;
+                }
+                .sort-list{
+                    vertical-align: middle;
+                    display: inline-flex;
+                    list-style: none;
+                    height: 40px;
+                    li{
+                        vertical-align: middle;
+                        display: inline;
+                        text-align: center;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        margin-left: 15px;
+                        line-height: 20px;
+                        &:first-child{
+                            margin-left: 5px;
+                        }
+                        a{
+                            color: $text-color;
+                            &:hover{
+                                color: $primary-color;
+                            }
+                        }
+                        &:hover{
+                            border-bottom: 2px solid $primary-color;
+                        }
+                    }
+                }
+            }
+            .search-in-category{
+                display: flex;
+                .search-text{
+                    width: 90%;
+                    input{
+                        width: 100%;
+                        border: 1px solid $line-border;
+                        border-radius: 3px 0 0 3px;
+                        border-right: none;
+                        height: 30px;
+                        outline: 0;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        padding: 0 5px;
+                        flex: 1;
+                        &::placeholder {
+                            font-size: 13px;
+                            color: $text-color;
+                            opacity: 1;
+                        }
+                    }
+                }
+                .btn-search{
+                    width: 10%;
+                    .btn{
+                        width: 100%;
+                        height: 30px;
+                        padding: 4px;
+                        background-color: $breadcrump-bg;
+                        border: 1px solid $line-border;
+                        border-radius: 0 3px 3px 0;
+                        i{
+                            color: $black-color;
+                        }
+                    }
+                }
+            }
+        }
+        .list-product{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 30px;
+            .product-item{
+                
+            }
+        }
+    }
+    .group{
+        margin-top: 10px;
+        .group-body{
+            padding: 0;
+            .side-bar{
+                .panel-group{
+                    padding-right: 15px;
+                    .panel{
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid $background-color;
+                        &.panel-info{
+
+                        }
+                        &-heading{
+                            display: block;
+                            padding-left: 15px;
+                            padding-top: 15px;
+                            padding-bottom: 10px;
+                            .panel-title{
+                                font-size: 14px;
+                                font-weight: $medium;
+                                color: $black-color;
+                                text-transform: uppercase;
+                            }
+                        }
+                        &-collapse{
+                            .list-group{
+                                .js-more{
+                                    display: none;
+                                }
+                                &-item{
+                                    border: none;
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                    padding-top: 5px;
+                                    padding-bottom: 5px;
+                                    padding-left: 15px;
+                                    text-transform: capitalize;
+                                    &.is-parent{
+                                        font-weight: $medium;
+                                    }
+                                    &.is-child{
+                                        padding-left: 30px;
+                                    }
+                                    a{
+                                        color: $black-color;
+                                    }
+                                    &:hover, &:focus{
+                                        background-color: $breadcrump-bg;
+                                    }
+                                    .item-rating{
+                                        .rating-box{
+                                            color: #c3c3c3;
+                                        }
+                                        font-size: 13px;
+                                        text-transform: none;
+                                    }
+                                    &.load-more{
+                                        font-size: 13px;
+                                        text-align: center;
+                                        font-weight: $medium;
+                                        cursor: pointer;
+                                        &:hover{
+                                            background-color: $white;
+                                        }
+                                        i{
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

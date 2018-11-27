@@ -1,0 +1,110 @@
+@mixin icons($x, $y, $w, $h) {
+    width: $w+px;
+    height: $h+px;
+    background-image: url(/public/assets/images/icons.png);
+    background-position: $x+px $y+px;
+}
+
+
+.cgnicon {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.icon {
+    &-burger-menu {
+        @include icons(-45, 53, 20, 20);
+    }
+
+    &-location-picker,
+    &-location-shadow {
+        @include icons(-362, -117, 24, 24);
+    }
+
+    &-arrow-down {
+        @include icons(-85, 55, 24, 24);
+    }
+
+    &-reward {
+        @include icons(-462, -119, 24, 24);
+    }
+
+    &-refund {
+        @include icons(-422, -119, 34, 24);
+    }
+
+    &-newspaper {
+        @include icons(-385, -119, 34, 24);
+    }
+
+    &-plane {
+        @include icons(-227, -183, 24, 24);
+    }
+
+    &-sport {
+        @include icons(-481, -223, 24, 24);
+    }
+
+    &-game {
+        @include icons(-108, -189, 24, 24);
+        background-size: 730px auto;
+    }
+
+    &-watch {
+        @include icons(-449, -223, 24, 24);
+    }
+
+    &-houseware {
+        @include icons(-577, -255, 24, 24);
+    }
+
+    &-heart {
+        @include icons(-348, -221, 24, 24);
+    }
+
+    &-baby {
+        @include icons(-314, -221, 24, 24);
+    }
+
+    &-leaf {
+        @include icons(-255, -252, 24, 24);
+    }
+
+    &-phone {
+        @include icons(-10, -255, 24, 24);
+    }
+
+    &-home {
+        @include icons(-80, -223, 24, 24);
+    }
+
+    &-fashion {
+        @include icons(-248, -223, 24, 24);
+    }
+
+    &-bag {
+        @include icons(-180, -223, 24, 24);
+    }
+
+    &-fire {
+        @include icons(-547, -279, 24, 24);
+    }
+
+    &-fishing {
+        @include icons(-578, -279, 24, 24);
+    }
+
+    &-warranty{
+        background-image: url(/public/assets/images/sprite.png);
+        background-position: -366px -201px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &-store{
+        background-image: url(/public/assets/images/sprite.png);
+        background-position: -58px -330px;
+        width: 24px;
+        height: 24px;
+    }
+}

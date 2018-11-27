@@ -1,0 +1,146 @@
+.cart-block{
+    .group{
+        &-body{
+            padding: 0;
+        }
+    }
+    .list-product{
+        padding: 0;
+        margin: 0;
+        .item-product{
+            padding: 15px 45px 15px 30px;
+            border-bottom: 1px solid $line-border;
+            &:last-child{
+                border: none;
+            }
+            .image{
+                text-align: center;
+                width: 20%;
+                img{
+                    width: auto;
+                    height: 100px;
+                }
+            }
+            .product-info{
+                width: 80%;
+                .box-info{
+                    width: 70%;
+                    .name{
+                        font-size: 14px;
+                        margin-bottom: 7px;
+                        line-height: 20px;
+                        font-weight: 700;
+                        padding-top: 0;
+                        a{
+                            color: #242424;
+                            font-weight: $regular;
+                        }
+                    }
+                    .seller-by{
+                        font-size: 13px;
+                        margin-bottom: 12px;
+                    }
+                    .action{
+                        font-size: 13px;
+                        .remove{
+                            margin-right: 30px;
+                        }
+                        a{
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .box-price{
+                    width: 20%;
+                    p{
+                        margin-bottom: 5px;
+                    }
+                    .price-sale{
+                        font-size: 16px;
+                        font-weight: $medium;
+                    }
+                    .price-old{
+                        font-style: 13px !important;
+                        color: $text-color-light;
+                        text-decoration: line-through;
+                    }
+                    .sale{
+                        display: inline-block;
+                        background-color: $primary-color;
+                        color: $white;
+                        font-weight: $medium;
+                        padding: 3px;
+                        border-radius: 3px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                    }
+                }
+                .box-quantity{
+                    width: 10%;
+                }
+            }
+        }
+    }
+    .fee{
+        &:first-child{
+            border-bottom: 1px solid $line-border;
+        }
+        .info-price{
+            strong{
+                float: right;
+            }
+        }
+        .total-price{
+            .title{
+                display: inline-block;
+            }
+            .content{
+                display: inline;
+                .total{
+                    float: right;
+                    color: #fe3834;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                small{
+                    font-size: 12px;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .btn{
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857;
+        border-radius: 3px;
+        -moz-user-select: none;
+        user-select: none;
+        width: 100%;
+        &.btn-order{
+            margin-top: 15px;
+            margin-bottom: 20px;
+            color: #fff;
+            background-color: #ff424e;
+            border-color: #ff424e;
+        }
+    }
+
+    .order-block{
+        position: relative;
+    }
+}

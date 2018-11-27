@@ -1,0 +1,16 @@
+{
+    "host": "caganu.com",
+    "username": "betatemplate@caganu.com",
+    "password": "k87vNIUr",
+    "remotePath": "/",
+    "protocol": "ftp",
+    "fileNameEncoding": "utf8",
+    "autoDelete": true,
+    "autoDownload": true,
+    "autoDownloadAlways": 900000,
+    "autoUpload": true,
+    "ignore": [
+        "/.vscode",
+        "/public/assets/plugins"
+    ]
+}

@@ -1,0 +1,52 @@
+ <div id="_alert_bg" class="hidden">
+      <div id="_alert_content" class="center-container">
+         <div class="img hidden"></div>
+         <span></span>
+         <div class="middle-centered-div alert-btn-group">
+            <div class="btn-dismiss-alert flex1">Không</div>
+            <div class="btn-confirm-alert flex1">Đồng ý</div>
+         </div>
+      </div>
+   </div>
+   <div id="_alert_msg" class="center-container hidden">
+      <div class="img hidden"></div>
+      <span></span>
+      <div class="middle-centered-div alert-btn-group">
+         <div class="btn-dismiss-alert flex1">Không</div>
+         <div class="btn-confirm-alert flex1">Đồng ý</div>
+      </div>
+   </div>
+   <div class="page_hide"></div>
+   <div class="general-mask"></div>
+</div>
+ <script>
+      {
+      	var dur = (Date.now ? Date.now() : +new Date()) - QOS_PAGE_START_MS;
+      	if(window._track_qos_pageload)
+      		_track_qos_pageload(dur);
+      	if(window.BI_ANALYTICS)
+      		BI_ANALYTICS.qos(QOS_TYPE.HTML, dur);
+      }
+      
+      if(window.__plvNeedSaveAllNodesState__)
+      {
+      	// __plv_saved_body__ = document.children[0].innerHTML;
+      	window.__plv_saved_body__ = document.body.innerHTML;
+      }
+   </script>
+   <script type="text/javascript" id="" src="https://www.google-analytics.com/analytics.js"></script>
+   <!--
+   <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init",google_tag_manager["GTM-WJZQSJF"].macro(1));fbq("track","PageView");</script>-->
+   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1457130904612161&amp;ev=PageView&amp;noscript=1"></noscript>
+   <div id="mouseposition-extension-element-full-container" style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; pointer-events: none; z-index: 2147483647; font-weight: 400;">
+      <div id="mouseposition-extension-element-rect-display" style="display: none; position: absolute; background: rgba(255, 255, 255, 0.7); outline: black solid 1px; font-size: 12px; z-index: 2147483647; justify-content: center; align-items: center; user-select: none; cursor: default; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; width: 0px; height: 0px;">
+         <pre style="flex: 1 1 0%; text-align: center; background-color: rgba(255, 255, 255, 0.7); color: rgb(0, 0, 0); min-width: 42px; min-height: 12px; transition: all 1s ease 0s;"></pre>
+      </div>
+      <pre id="mouseposition-extension-element-coordinate-display" style="position: absolute; display: none; background: rgb(255, 255, 255); font-size: 12px; line-height: 14px; border-radius: 3px; border-width: 1px; border-color: rgb(34, 34, 34) black rgb(51, 51, 51); border-style: solid; padding: 3px; z-index: 2147483647; color: rgb(34, 34, 34); user-select: none; cursor: default; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;"></pre>
+   </div>
+   <!--
+   <script type="text/javascript" id="">window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga("create","UA-61914164-6","auto","gtm");ga("gtm.require","ec");ga("gtm.set","transport","beacon");</script>-->
+   <div id="criteo-tags-div" style="display: none;"><iframe height="0" width="0" src="//dis.as.criteo.com/dis/dis.aspx?p=34657&amp;cb=7633561742&amp;ref=&amp;sc_r=1366x768&amp;sc_d=24" style="display: none;"></iframe></div>
+   <!--<script type="text/javascript" id="">(function(){var a=location.search?location.pathname+location.search:location.pathname;setTimeout(function(){ga("gtm.set","page",a);ga("gtm.send","pageview")},0)})();</script>-->
+</body>
+</html>
